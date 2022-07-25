@@ -1,5 +1,6 @@
-import { FaBars } from 'react-icons/fa'
+
 import { NavLink as Link } from 'react-router-dom'
+import { AiOutlineFacebook } from "react-icons/ai";
 import styled from 'styled-components'
 
 export const Side = styled.div`
@@ -25,24 +26,26 @@ export const NavLink = styled(Link)`
     color: #b3273d;
     width: 85px;
     height: 85px;
-    border-radius: 10px;
-    border-style: solid;
-    border-color: coral;
+    
     outline: none;
     text-decoration: none;
     margin: 5px auto;
     margin: 5px auto;
+    
   &:hover {
     transition: all 0.2s ease-in-out;
-    
-    color: #b3273d;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #FFFFFF;
+    box-shadow: 5px 10px #888888;
+    color: #000;
   }
   &.active {
-    color: #b3273d;
+    color: #000;
   }
 `;
 
-export const Bars = styled(FaBars)`
+export const Bars = styled(AiOutlineFacebook)`
 display: none;
 color: #fff;
 @media screen and (max-width: 768px) {
@@ -75,16 +78,13 @@ background: #fff;
   }
 `;
 
-export const NavBtn = styled.nav`
-  display: flex;
-  align-items: center;
-  margin-right: 13px;
-  /* Third Nav */
-  /* justify-content: flex-end;
-  width: 100vw; */
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
+export const pathclip = styled.div`
+offset-path: path(
+  'M  20  240 \
+   L  20  80 L 160  80 \
+   L 160  20 L 280 100 \
+   L 160 180 L 160 120 \
+   L  60 120 L  60 240 Z')
 `;
 
 export const NavBtnLink = styled(Link)`

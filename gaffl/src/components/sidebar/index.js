@@ -1,8 +1,11 @@
 import React from 'react';
+
 import {
+  Bars,
   Side,
   NavLink,
   NavMenu,
+  
 } from './side';
 
 const Sidebar = () => {
@@ -10,20 +13,21 @@ const Sidebar = () => {
     <>
       <Side>
         <NavMenu>
-          <NavLink to='/Start-trip' activeStyle>
-            Start Trip
+          <NavLink to='/Discover'  activeStyle >
+          <Bars/>
+             Discover
           </NavLink>
-          <NavLink to='/Discover' activeStyle>
-            Discover
+          <NavLink to='/' activeStyle>
+            Stays
           </NavLink>
-          <NavLink to='/Message' activeStyle>
-            Message
+          <NavLink to='/' activeStyle>
+            Flights
           </NavLink>
-          <NavLink to='/Like' activeStyle>
-            Likes
+          <NavLink to='/' activeStyle>
+            My Trips
           </NavLink>
-          <NavLink to='/View' activeStyle>
-            Views
+          <NavLink to='/' activeStyle>
+            Get Unlimited
           </NavLink>
           {/* Second Nav */}
           {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
