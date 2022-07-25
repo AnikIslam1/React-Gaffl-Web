@@ -17,17 +17,21 @@ background: #fff
 justify-content: flex-start;
 `
 export const NavLink = styled(Link)`
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-color: #000;
-width: 85px;
-height: 85px;
-border-radius: 10px;
-outline: none;
-text-decoration: none;
-margin: 5px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    color: #b3273d;
+    width: 85px;
+    height: 85px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: coral;
+    outline: none;
+    text-decoration: none;
+    margin: 5px auto;
+    margin: 5px auto;
   &:hover {
     transition: all 0.2s ease-in-out;
     
@@ -53,10 +57,11 @@ color: #fff;
 `;
 
 export const NavMenu = styled.div`
-
-position: fixed;
-margin-top: 70px;
-padding: 250px 55px;
+margin-top: 40px;
+padding: 50px 30px;
+justify-content: center;
+align-items: center;
+height: auto;
 border-radius: 15px;
 background: #fff;
 

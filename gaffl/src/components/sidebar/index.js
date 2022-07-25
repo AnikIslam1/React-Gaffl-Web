@@ -2,18 +2,13 @@ import React from 'react';
 import {
   Side,
   NavLink,
- 
   NavMenu,
-  NavBtn,
-  NavBtnLink
 } from './side';
 
 const Sidebar = () => {
   return (
     <>
       <Side>
-        
-        
         <NavMenu>
           <NavLink to='/Start-trip' activeStyle>
             Start Trip
@@ -32,9 +27,7 @@ const Sidebar = () => {
           </NavLink>
           {/* Second Nav */}
           {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
-          <NavBtn>
-          <NavBtnLink to='/get-unlimited'>Get Unlimited</NavBtnLink>
-        </NavBtn>
+         
         </NavMenu>
         
       </Side>
