@@ -1,4 +1,5 @@
 import React from 'react';
+import Sidebar  from '../components/sidebar';
 
 const Discover = () => {
   return (
@@ -11,8 +12,10 @@ const Discover = () => {
         background: '#c7c3c3'
       }}
     >
+    <Sidebar />
       <h1>Discover</h1>
     </div>
+    
   );
 };
 

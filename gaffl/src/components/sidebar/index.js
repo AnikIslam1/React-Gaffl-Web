@@ -2,7 +2,7 @@ import React from 'react';
 import {
   Side,
   NavLink,
-  Bars,
+ 
   NavMenu,
   NavBtn,
   NavBtnLink
@@ -12,7 +12,7 @@ const Sidebar = () => {
   return (
     <>
       <Side>
-        <Bars />
+        
         
         <NavMenu>
           <NavLink to='/Start-trip' activeStyle>
@@ -32,10 +32,11 @@ const Sidebar = () => {
           </NavLink>
           {/* Second Nav */}
           {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
-        </NavMenu>
-        <NavBtn>
+          <NavBtn>
           <NavBtnLink to='/get-unlimited'>Get Unlimited</NavBtnLink>
         </NavBtn>
+        </NavMenu>
+        
       </Side>
     </>
   );

@@ -53,6 +53,7 @@ color: #fff;
 `;
 
 export const NavMenu = styled.div`
+
 position: fixed;
 margin-top: 70px;
 padding: 250px 55px;
