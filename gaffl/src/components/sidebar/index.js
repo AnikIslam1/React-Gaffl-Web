@@ -1,7 +1,9 @@
 import React from 'react';
+import { FaGlobeAmericas, FaBed, FaStar, FaHiking, FaPlaneDeparture  } from "react-icons/fa";
+
 
 import {
-  Bars,
+ 
   Side,
   NavLink,
   NavMenu,
@@ -14,20 +16,24 @@ const Sidebar = () => {
       <Side>
         <NavMenu>
           <NavLink to='/Discover'  activeStyle >
-          <Bars/>
+            <FaGlobeAmericas size={'3em'} color= {'#b3273d'}/>
              Discover
           </NavLink>
           <NavLink to='/' activeStyle>
+            <FaBed  size={'3em'} color= {'#b3273d'}/>
             Stays
           </NavLink>
           <NavLink to='/' activeStyle>
+            <FaPlaneDeparture  size={'3em'} color= {'#b3273d'}/>
             Flights
           </NavLink>
           <NavLink to='/' activeStyle>
+            <FaHiking  size={'3em'} color= {'#b3273d'}/>
             My Trips
           </NavLink>
           <NavLink to='/' activeStyle>
-            Get Unlimited
+            <FaStar  size={'3em'} color= {'#b3273d'}/>
+            Unlimited
           </NavLink>
           {/* Second Nav */}
           {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}

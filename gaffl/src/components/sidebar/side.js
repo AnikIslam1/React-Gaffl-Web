@@ -1,19 +1,19 @@
 
 import { NavLink as Link } from 'react-router-dom'
-import { AiOutlineFacebook } from "react-icons/ai";
 import styled from 'styled-components'
+
 
 export const Side = styled.div`
 position: fixed;
-    top: 70px;
+    top: 60px;
     left: 0;
     overflow-x: hidden;
     overflow-y: auto;
     background: transparent;
     z-index: 1;
-    padding: 0 15px;
+    padding: 0 10px;
 
-background: #fff
+background: #888888
   /* Third Nav */
 justify-content: flex-start;
 `
@@ -36,32 +36,26 @@ export const NavLink = styled(Link)`
     transition: all 0.2s ease-in-out;
     border-radius: 10px;
     border-style: solid;
-    border-color: #FFFFFF;
-    box-shadow: 5px 10px #888888;
+    border-color: #b3273d;
+    box-shadow: 5px 7px #888888;
     color: #000;
   }
   &.active {
+    
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #b3273d;
+    box-shadow: 5px 7px #888888;
     color: #000;
+    
   }
 `;
 
-export const Bars = styled(AiOutlineFacebook)`
-display: none;
-color: #fff;
-@media screen and (max-width: 768px) {
-  display: block;
-  position: absolute;
-  top: 0;
-  right: 0;
-  transform: translate(-100%, 75%);
-  font-size: 1.8rem;
-  cursor: pointer;
-}
-`;
+
 
 export const NavMenu = styled.div`
 margin-top: 40px;
-padding: 50px 30px;
+padding: 35px 15px;
 justify-content: center;
 align-items: center;
 height: auto;
