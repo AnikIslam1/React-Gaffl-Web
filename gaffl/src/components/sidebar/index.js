@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaGlobeAmericas, FaBed, FaStar, FaHiking, FaPlaneDeparture  } from "react-icons/fa";
-
+import { Container } from 'react-bootstrap';
 
 import {
  
@@ -13,7 +13,8 @@ import {
 const Sidebar = () => {
   return (
     <>
-      <Side>
+    <Container>
+    <Side>
         <NavMenu>
           <NavLink to='/Discover'  activeStyle >
             <FaGlobeAmericas size={'3em'} color= {'#b3273d'}/>
@@ -41,6 +42,8 @@ const Sidebar = () => {
         </NavMenu>
         
       </Side>
+    </Container>
+      
     </>
   );
 };

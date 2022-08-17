@@ -1,5 +1,6 @@
 import React from 'react';
 import Sidebar  from '../components/sidebar';
+import Searchbar  from '../components/searchbar';
 
 const Discover = () => {
   return (
@@ -8,10 +9,11 @@ const Discover = () => {
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
-        height: '90vh',
+        height: '100vh',
         background: '#c7c3c3'
       }}
     >
+    <Searchbar />
     <Sidebar />
       <h1>Discover</h1>
     </div>

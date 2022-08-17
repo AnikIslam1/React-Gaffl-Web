@@ -5,13 +5,13 @@ import styled from 'styled-components'
 
 export const Side = styled.div`
 position: fixed;
-    top: 60px;
-    left: 0;
-    overflow-x: hidden;
-    overflow-y: auto;
-    background: transparent;
-    z-index: 1;
-    padding: 0 10px;
+top: 60px;
+left: 0;
+overflow-x: hidden;
+overflow-y: auto;
+background: transparent;
+z-index: 1;
+padding: 0 10px;
 
 background: #888888
   /* Third Nav */
@@ -29,8 +29,8 @@ export const NavLink = styled(Link)`
     
     outline: none;
     text-decoration: none;
-    margin: 5px auto;
-    margin: 5px auto;
+    margin: 10px auto;
+    margin: 10px auto;
     
   &:hover {
     transition: all 0.2s ease-in-out;
@@ -55,7 +55,7 @@ export const NavLink = styled(Link)`
 
 export const NavMenu = styled.div`
 margin-top: 40px;
-padding: 35px 15px;
+padding: 30px 15px;
 justify-content: center;
 align-items: center;
 height: auto;
