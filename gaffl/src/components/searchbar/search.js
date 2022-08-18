@@ -2,12 +2,14 @@ import styled from 'styled-components'
 
 
 export const SearchField = styled.div`
-position: relative;
+position: fixed;
+top: 90px;
+left: 150px;
 
-padding:30px 350px;
+padding:300px 400px;
 
-float:left;
-border-radius: 0px;
+
+border-radius: 15px;
 background: #fff;
 
   /* Second Nav */
