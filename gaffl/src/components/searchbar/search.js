@@ -5,9 +5,11 @@ export const SearchField = styled.div`
 position: fixed;
 top: 90px;
 left: 150px;
-
+box-size: borderbox;
 padding:300px 400px;
-
+@media screen and (max-width: 1024px) {
+  display: none;
+}
 
 border-radius: 15px;
 background: #fff;

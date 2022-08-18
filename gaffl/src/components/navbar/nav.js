@@ -1,6 +1,7 @@
 import { FaBars } from 'react-icons/fa'
 import { NavLink as Link } from 'react-router-dom'
 import styled from 'styled-components'
+// import {useState} from 'react'
 
 export const Nav = styled.nav`
   position: fixed;
@@ -47,7 +48,17 @@ export const Bars = styled(FaBars)`
     cursor: pointer;
   }
 `;
+export const mobsidebar = styled.div`
 
+    flex-flow: column nowrap;
+    background-color:#000;
+    position: fixed;
+    top: 80px;
+    right: 0;
+    height: 100vh;
+    width: 300px;
+    padding-top: 3.5rem;
+`;
 export const NavMenu = styled.div`
   display: flex;
   align-items: center;
@@ -87,6 +98,7 @@ export const NavBtnLink = styled(Link)`
   text-decoration: none;
   /* Second Nav */
   margin-left: 24px;
+  
   &:hover {
     transition: all 0.2s ease-in-out;
     background: #000000;

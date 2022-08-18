@@ -6,16 +6,20 @@ const Discover = () => {
   return (
     <div
       style={{
+        
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
         height: '100vh',
+        
         background: '#c7c3c3'
       }}
     >
+  
+    <h1>Discover</h1> 
     <Searchbar />
     <Sidebar />
-      <h1>Discover</h1>
+      
     </div>
     
   );
