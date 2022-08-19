@@ -1,48 +1,51 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { FaGlobeAmericas, FaBed, FaStar, FaHiking, FaPlaneDeparture  } from "react-icons/fa";
-import { Container } from 'react-bootstrap';
+import Searchbar  from '../searchbar';
 
 import {
  
   Side,
-  NavLink,
+  Button,
   NavMenu,
   
 } from './side';
 
+
+
 const Sidebar = () => {
+  const[openPage, setOpen] = useState(false);
   return (
     <>
-    <Container>
+    
     <Side>
         <NavMenu>
-          <NavLink to='/Discover'  activeStyle >
+          <Button onClick={() => setOpen(true)}  activeStyle >
             <FaGlobeAmericas size={'3em'} color= {'#b3273d'}/>
              Discover
-          </NavLink>
-          <NavLink to='/' activeStyle>
+          </Button>{openPage && <Searchbar/>}
+          <Button  activeStyle>
             <FaBed  size={'3em'} color= {'#b3273d'}/>
             Stays
-          </NavLink>
-          <NavLink to='/' activeStyle>
+          </Button>
+          <Button to='/' activeStyle>
             <FaPlaneDeparture  size={'3em'} color= {'#b3273d'}/>
             Flights
-          </NavLink>
-          <NavLink to='/' activeStyle>
+          </Button>
+          <Button to='/' activeStyle>
             <FaHiking  size={'3em'} color= {'#b3273d'}/>
             My Trips
-          </NavLink>
-          <NavLink to='/' activeStyle>
+          </Button>
+          <Button to='/' activeStyle>
             <FaStar  size={'3em'} color= {'#b3273d'}/>
             Unlimited
-          </NavLink>
+          </Button>
           {/* Second Nav */}
           {/* <NavBtnLink to='/sign-in'>Sign In</NavBtnLink> */}
          
         </NavMenu>
         
       </Side>
-    </Container>
+    
       
     </>
   );

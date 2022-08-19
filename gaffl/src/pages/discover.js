@@ -1,6 +1,6 @@
 import React from 'react';
 import Sidebar  from '../components/sidebar';
-import Searchbar  from '../components/searchbar';
+// import Searchbar  from '../components/searchbar';
 
 const Discover = () => {
   return (
@@ -17,7 +17,7 @@ const Discover = () => {
     >
   
     <h1>Discover</h1> 
-    <Searchbar />
+    
     <Sidebar />
       
     </div>

@@ -17,7 +17,7 @@ background: #888888
   /* Third Nav */
 justify-content: flex-start;
 `
-export const NavLink = styled(Link)`
+export const Button = styled.button`
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,18 +26,19 @@ export const NavLink = styled(Link)`
     color: #b3273d;
     width: 85px;
     height: 85px;
-    
-    outline: none;
+    border-radius: 10px;
+    border-color: #b3273d;
     text-decoration: none;
     margin: 10px auto;
     margin: 10px auto;
     
   &:hover {
+    cursor: pointer;
     transition: all 0.2s ease-in-out;
     border-radius: 10px;
     border-style: solid;
     border-color: #b3273d;
-    box-shadow: 5px 7px #888888;
+    box-shadow: 5px 7px #c5c5c5;
     color: #000;
   }
   &.active {
@@ -72,14 +73,6 @@ background: #fff;
   }
 `;
 
-export const pathclip = styled.div`
-offset-path: path(
-  'M  20  240 \
-   L  20  80 L 160  80 \
-   L 160  20 L 280 100 \
-   L 160 180 L 160 120 \
-   L  60 120 L  60 240 Z')
-`;
 
 export const NavBtnLink = styled(Link)`
   border: 1px solid #e5b02efa;
