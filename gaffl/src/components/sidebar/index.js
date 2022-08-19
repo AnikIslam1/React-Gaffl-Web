@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import { FaGlobeAmericas, FaBed, FaStar, FaHiking, FaPlaneDeparture  } from "react-icons/fa";
-import Searchbar  from '../searchbar';
-
+import DisPage  from '../Com/Discopage';
+import StayPage  from '../Com/Staypage';
 import {
- 
   Side,
   Button,
   NavMenu,
@@ -13,20 +12,21 @@ import {
 
 
 const Sidebar = () => {
+  const[openDis, DisOpen] = useState(false);
   const[openPage, setOpen] = useState(false);
   return (
     <>
     
     <Side>
         <NavMenu>
-          <Button onClick={() => setOpen(true)}  activeStyle >
+          <Button  onClick={() => DisOpen(true) || setOpen(false)} activeStyle>
             <FaGlobeAmericas size={'3em'} color= {'#b3273d'}/>
              Discover
-          </Button>{openPage && <Searchbar/>}
-          <Button  activeStyle>
+          </Button>{openDis && <DisPage/> }
+          <Button onClick={() => setOpen(true) || DisOpen(false)}  activeStyle>
             <FaBed  size={'3em'} color= {'#b3273d'}/>
             Stays
-          </Button>
+          </Button>{openPage && <StayPage/>}
           <Button to='/' activeStyle>
             <FaPlaneDeparture  size={'3em'} color= {'#b3273d'}/>
             Flights

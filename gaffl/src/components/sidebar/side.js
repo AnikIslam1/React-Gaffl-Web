@@ -41,7 +41,7 @@ export const Button = styled.button`
     box-shadow: 5px 7px #c5c5c5;
     color: #000;
   }
-  &.active {
+  &:active {
     
     border-radius: 10px;
     border-style: solid;
@@ -49,9 +49,9 @@ export const Button = styled.button`
     box-shadow: 5px 7px #888888;
     color: #000;
     
-  }
-`;
+  } 
 
+`;
 
 
 export const NavMenu = styled.div`
