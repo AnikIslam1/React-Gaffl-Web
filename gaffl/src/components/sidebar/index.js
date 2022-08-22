@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { FaGlobeAmericas, FaBed, FaStar, FaHiking, FaPlaneDeparture  } from "react-icons/fa";
 import DisPage  from '../Com/Discopage';
 import StayPage  from '../Com/Staypage';
+
 import {
   Side,
   Button,

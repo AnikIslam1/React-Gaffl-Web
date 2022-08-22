@@ -1,5 +1,5 @@
 import React from 'react';
-
+import SearchBar from '../searchbar';
 import {
 
 DiscoField
@@ -11,6 +11,7 @@ const DisPage = () => {
     <>
       
       <DiscoField>
+        <SearchBar/>
       <div className="bg-light border">First item</div>
       <div className="bg-light border ms-auto">Second item</div>
       </DiscoField> 

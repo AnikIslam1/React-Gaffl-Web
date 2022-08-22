@@ -1,4 +1,5 @@
 import React from 'react';
+
 import {
   Nav,
   NavLink,
@@ -20,8 +21,9 @@ const Navbar = () => {
           <NavLink to='/Start-trip' activeStyle>
             Start Trip
           </NavLink>
-          <NavLink to='/Discover' activeStyle>
+          <NavLink to='/Discover'  activeStyle>
             Discover
+            
           </NavLink>
           <NavLink to='/Message' activeStyle>
             Message
