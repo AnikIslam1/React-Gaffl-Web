@@ -1,19 +1,21 @@
 import React from 'react';
-import SearchBar from '../searchbar';
-import {
 
+import {
+wrap,
 DiscoField
 
-} from './search';
+} from './page';
 
 const DisPage = () => {
   return (
     <>
       
       <DiscoField>
-        <SearchBar/>
-      <div className="bg-light border">First item</div>
-      <div className="bg-light border ms-auto">Second item</div>
+        <wrap placeholder = "xxxxx"/>
+      
+      
+      <div >Second item</div>
+      
       </DiscoField> 
     </>
   );

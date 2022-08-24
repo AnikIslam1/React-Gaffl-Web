@@ -4,7 +4,7 @@ import {
 
 StayField
 
-} from './search';
+} from './page';
 const StayPage = () => {
     return (
       <>

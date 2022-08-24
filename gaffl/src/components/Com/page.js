@@ -23,6 +23,13 @@ background: #fff;
     display: none;
   }
 `;
+export const wrap = styled.input`
+width: 100%;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+`;
 export const StayField = styled.div`
 position: fixed;
 top: 90px;
